@@ -1,3 +1,13 @@
+/*padding: top/bottom padding left/right padding*/
+/*css reset*/
+body,ul,li,h1,a
+{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+
+
 header
 {
      background-color: #F63232;
@@ -28,6 +38,7 @@ header h1
 .banner img
 {
     max-width: 100%;
+    left: 0px;
    
 }
 .banner .welcome
@@ -43,11 +54,229 @@ header h1
 {
     font-size: 74px;
 }
-.main-nav ul a
-{
-    color:purple;
-}
 .banner h2 span
 {
     font-size:1.3em; /* 1.3 the defautlt font size*/
+}
+nav
+{
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top:100px; /*when it's X px from the top turn into a sticky*/
+}
+
+nav li
+{
+    width: 25%;
+    display: inline-block;
+    font-size:  24px;
+}
+nav ul
+{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li a
+{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join /*target the join anchor tab*/
+{
+    color: #F63232;
+}
+main
+{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto; /*auto left and right margin*/
+    padding: 0 40px; /*creates a column like design*/
+    box-sizing: border-box;/*incoperate padding of total width*/
+}
+
+article h2
+{
+    color: #F63232;
+    font-size:  48px;
+
+    
+}
+
+article p
+{
+    line-height: 2em; /*space between lines*/
+    color: #4b4b4b;
+}
+
+.images
+{
+    text-align: center;
+    margin:80px 0;
+    white-space: nowrap;
+}
+.images li
+{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+
+}
+.images li img
+{
+    max-width: 100%;/*width of parent image classs*/
+}
+
+.join
+{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px ;
+    color: #4b4b4b;
+}
+
+.join h2
+{
+    font-size: 36px;
+}
+
+form input
+{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 24px;
+    border: 4px solid white;
+}
+
+footer
+{
+    background: #F63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*pseudo classes*/
+/*hover over navigation*/
+nav li a:hover
+{
+    text-decoration: underline;
+    background-color:#eeeeee; 
+}
+/*shift an image up (relative to its postion)*/
+
+.images li:hover
+{
+    position: relative;
+    top: -4px;
+}
+/*email form focus*/
+
+form input:focus
+{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+/*input validation*/
+form input:valid
+{
+    border: 4px solid rgb(87, 255, 87);
+    
+}
+/* first child 
+nav li:first-child
+{
+    border: 3px solid red;
+}
+(check ww3 schools for all types of pesudo classes )
+*/
+
+
+/*pesudo elements, inject dynamic code into elements*/
+
+article p::first-line
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join p::first-letter
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*responsive styles*/
+@media screen and (max-width:1400px) /* on screens apply x styles to apply at 1400px or less*/
+{
+    .banner .welcome h2
+    {
+        font-size: 60px;
+   
+    }
+    nav li 
+    {
+        font-size:  18px;
+    };
+}
+
+@media screen and (max-width:960px) /* on screens apply x styles to apply at 960px or less*/
+{
+    .banner .welcome h2
+    {
+        font-size: 40px;
+   
+    }
+    
+}
+@media screen and (max-width:700px) /* on screens apply x styles to apply at 700px or less*/
+{
+    .banner .welcome 
+    {
+        font-size: 40px;
+        position:relative;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .banner .welcome br
+    {
+        display: none;
+    }
+    .banner .welcome h2
+    {
+        font-size: 25px;
+    }
+    .banner .welcome span
+    {
+        font-size: 1em;
+    }
+    .images li
+    {
+        width:100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
+@media screen and (max-width:500px) /* on screens apply x styles to apply at 700px or less*/
+{
+  nav li 
+  {
+      font-size: 20px;
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+  }
+  header
+  {
+      position: relative;
+  }
+  nav
+  {
+    top: 0;
+  }
 }
