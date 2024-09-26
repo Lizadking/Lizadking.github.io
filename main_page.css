@@ -26,9 +26,9 @@
 .sor-image-block
 {
     background-color: green;
-    justify-content: center;
+
 }
-.sor-special-grade-block
+.sor-grade-block
 {
     background-color: lightgreen;
 }
@@ -76,4 +76,12 @@
 .curse-ranking-block 
 {
     background-color: lightskyblue;
+}
+
+.img
+{
+    width: 40%;
+    height: 40%;
+    max-width: 100%;
+    max-height: 90%;
 }
