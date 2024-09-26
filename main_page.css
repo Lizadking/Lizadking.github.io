@@ -5,3 +5,75 @@
     font-weight: bold;
                                                 
 }
+.nav-bar-div
+{
+    display:flex;
+    background-color: lightblue;
+    justify-content: space-evenly;
+}
+.main-content-div
+{
+    display: flex;
+    background-color: salmon;
+    justify-content: space-around;
+    
+}
+.sor-block-div
+{
+    background-color: yellow;
+    flex-direction: column;
+}
+.sor-image-block
+{
+    background-color: green;
+    justify-content: center;
+}
+.sor-special-grade-block
+{
+    background-color: lightgreen;
+}
+/*in the ranking block there should be a flex grid soon to accomodate n things*/
+.sor-ranking-block 
+{
+    background-color: lightskyblue;
+}
+.arrow-block-div
+{
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    
+}
+.weak-img-block
+{
+    background-color: lightpink;
+
+}
+.arrow-img-block
+{
+    background-color: paleturquoise;
+}
+
+.strong-img-block
+{
+    background-color: aquamarine;
+}
+
+.curse-block-div
+{
+    background-color: yellow;
+    flex-direction: column;
+}
+.curse-image-block
+{
+    background-color: green;
+    justify-content: center;
+}
+.curse-special-grade-block
+{
+    background-color: lightgreen;
+}
+/*in the ranking block there should be a flex grid soon to accomodate n things*/
+.curse-ranking-block 
+{
+    background-color: lightskyblue;
+}
