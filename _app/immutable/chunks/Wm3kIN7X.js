@@ -1,0 +1,1 @@
+import{f as e,a as n}from"./CcAYSrv0.js";import"./nDYbB_gF.js";var a=e('<div class="flexContainer svelte-sbtrnn"><div class="outerBox svelte-sbtrnn"><div class="contentBox svelte-sbtrnn"><a class="content svelte-sbtrnn" href="/home">BACK</a></div></div></div>');function v(t){var s=a();n(t,s)}export{v as B};
