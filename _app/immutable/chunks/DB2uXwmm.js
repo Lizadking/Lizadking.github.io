@@ -1,0 +1,1 @@
+const e=""+new URL("../assets/JJH_BLANK_LABEL_BOX_placeholder_Lizadking.D1LAXKSd.png",import.meta.url).href,a=""+new URL("../assets/JJH_BLANK_LABEL_BOX_placeholder_Keysmash.y7J0xREI.png",import.meta.url).href,s=""+new URL("../assets/JJH_BLANK_LABEL_BOX_placeholder_Juicebox.DY2aPSsr.png",import.meta.url).href;export{e as I,a,s as b};
